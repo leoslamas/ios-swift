@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="13F1066" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Whats_The_Weather" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lich-king-arthas.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="kGX-N1-UIl">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's The Weather" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OmJ-Tt-Gab">
+                                <rect key="frame" x="60" y="28" width="201" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Dxv-DD-Tkf"/>
+                                    <constraint firstAttribute="width" constant="201" id="bHw-Io-8os"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's your city?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ixs-Gg-bcz">
+                                <rect key="frame" x="93" y="57" width="134" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="134" id="7XC-p6-l7R"/>
+                                    <constraint firstAttribute="height" constant="21" id="Sai-kw-aOf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="inK-7z-2ez">
+                                <rect key="frame" x="16" y="86" width="288" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lp1-Fb-idS">
+                                <rect key="frame" x="87" y="124" width="147" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="147" id="piX-qb-0lV"/>
+                                    <constraint firstAttribute="height" constant="30" id="xsh-Zu-RkW"/>
+                                </constraints>
+                                <state key="normal" title="What's The Weather?">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="findWeather:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="We2-dF-ptw"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="llo-SJ-Lpr">
+                                <rect key="frame" x="16" y="162" width="288" height="143"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="143" id="cCJ-FS-gzK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.97404881040605584" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kGX-N1-UIl" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="95Z-RO-sqQ"/>
+                            <constraint firstItem="OmJ-Tt-Gab" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="Eil-Nj-pGA"/>
+                            <constraint firstItem="lp1-Fb-idS" firstAttribute="top" secondItem="inK-7z-2ez" secondAttribute="bottom" constant="8" id="HfK-Ki-ejl"/>
+                            <constraint firstItem="inK-7z-2ez" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="Hu2-29-NYI"/>
+                            <constraint firstItem="llo-SJ-Lpr" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="IXB-AP-ksa"/>
+                            <constraint firstItem="llo-SJ-Lpr" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="K6L-le-oZf"/>
+                            <constraint firstItem="llo-SJ-Lpr" firstAttribute="top" secondItem="lp1-Fb-idS" secondAttribute="bottom" constant="8" id="KC0-mQ-WkR"/>
+                            <constraint firstAttribute="centerX" secondItem="OmJ-Tt-Gab" secondAttribute="centerX" id="LgH-d9-kqb"/>
+                            <constraint firstItem="Ixs-Gg-bcz" firstAttribute="top" secondItem="OmJ-Tt-Gab" secondAttribute="bottom" constant="8" id="P2v-qK-Hug"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kGX-N1-UIl" secondAttribute="trailing" constant="-16" id="Sqo-yZ-13m"/>
+                            <constraint firstAttribute="centerX" secondItem="Ixs-Gg-bcz" secondAttribute="centerX" id="dZn-n7-62U"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="kGX-N1-UIl" secondAttribute="bottom" id="gLJ-ir-VFC"/>
+                            <constraint firstItem="kGX-N1-UIl" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="gXM-mC-oDz"/>
+                            <constraint firstItem="inK-7z-2ez" firstAttribute="top" secondItem="Ixs-Gg-bcz" secondAttribute="bottom" constant="8" id="nc4-ur-UNO"/>
+                            <constraint firstAttribute="centerX" secondItem="lp1-Fb-idS" secondAttribute="centerX" id="r5Q-q8-5k2"/>
+                            <constraint firstItem="inK-7z-2ez" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="ura-bV-Ozf"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="resultLabel" destination="llo-SJ-Lpr" id="vDS-4Y-udb"/>
+                        <outlet property="userCity" destination="inK-7z-2ez" id="mhZ-eu-dvT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="440" y="247"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="lich-king-arthas.jpg" width="1920" height="1200"/>
+    </resources>
+</document>
