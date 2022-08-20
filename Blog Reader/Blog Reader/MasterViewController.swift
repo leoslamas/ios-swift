@@ -38,7 +38,7 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
         
        
         
-        let urlPath = "https://www.googleapis.com/blogger/v3/blogs/10861780/posts?key=***REMOVED***"
+        let urlPath = "https://www.googleapis.com/blogger/v3/blogs/10861780/posts?key={API_KEY}"
         
         let url = NSURL(string: urlPath)
         
